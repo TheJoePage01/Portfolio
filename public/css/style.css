@@ -1,0 +1,138 @@
+/* General */
+
+body{
+    background-color: #08070b;
+
+    font-family: "Neuzeit Grotesk Bold", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Nav Bar */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.nav-bar div{
+    display: table;
+    margin: 0 auto;
+}
+
+.nav-bar ul{
+    text-align: center;
+    list-style: inside;
+}
+
+.nav-bar li{
+    color: rgb(143, 155, 168);
+
+    display: inline-block;
+
+    font-family: Biotif, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 1.2px;
+    margin-right:  25px;
+
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+}
+
+.nav-bar li:hover{
+    background-color: #282424;
+    
+    border: 13px solid #282424;
+    border-radius: 5px;
+}
+
+.nav-bar a{
+    color: rgb(143, 155, 168);
+}
+
+/* Introduction */
+.introduction{
+    width: 80%;
+    height: auto;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.introduction img{
+    float: left;
+
+    width: 25%;
+    height: 25%;
+
+    border-radius: 10%;
+
+    margin-right: 50px;
+}
+
+.introduction h1{
+    color: white;
+
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.introduction p{
+    color: rgb(143, 155, 168);
+
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+/* Footer */
+.footer{
+    position: absolute;
+
+    top: 97%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    list-style: inside;
+}
+
+.footer div{
+    display: table;
+    margin: 0 auto;
+}
+
+.footer ul{
+    text-align: center;
+    list-style: inside;
+}
+
+.footer li{
+    color: rgb(143, 155, 168);
+
+    display: inline-block;
+
+    font-family: Biotif, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1.2px;
+    margin-right:  25px;
+
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.footer a{
+    color: rgb(143, 155, 168);
+}
