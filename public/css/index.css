@@ -1,0 +1,30 @@
+/* Introduction */
+.introduction{
+    width: 80%;
+    height: auto;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.introduction img{
+    float: left;
+
+    width: 25%;
+    height: 25%;
+
+    border-radius: 10%;
+
+    margin-right: 50px;
+}
+
+.introduction h1{
+    color: white;
+
+    font-size: 42px;
+    font-weight: 900;
+}
