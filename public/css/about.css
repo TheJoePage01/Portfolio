@@ -1,0 +1,42 @@
+.about{
+    width: 57%;
+    margin: 0 auto;
+}
+
+.about .title{
+    color: #ff80bf;
+
+    font-size: 50px;
+}
+
+p{
+    line-height: 40px;
+    letter-spacing: 1.25px;
+    font-size: 15px;
+}
+
+.about .text a{
+    color: #ffca80;
+    font-size: 15px;
+}
+
+.about img{
+    float: left;
+
+    margin-right: 60px;
+
+    width: 30%;
+    height: 30%;
+
+    border-radius: 25px;
+    border: 5px solid rgb(33, 32, 36);
+}
+
+strong{
+    color: white;
+}
+
+.footer{
+    margin-top: 45px;
+    top: auto;
+}
