@@ -55,3 +55,23 @@
     margin-top: 45px;
     top: auto;
 }
+
+@media only screen and (max-width: 1020px) {
+    .project{
+        display: block;
+        text-align: left;
+    }
+
+    .project .text{
+        float: left;
+    }
+
+    .project img{
+        float: none;
+        height: auto; 
+
+        width: 60%; 
+
+        margin-left: 0px;
+    }
+}
