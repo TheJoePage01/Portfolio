@@ -22,3 +22,15 @@ li{
     color: white;
     line-height: 30px;
 }
+
+.footer{
+    margin-top: 45px;
+    top: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+    .contact{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
