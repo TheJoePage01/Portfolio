@@ -50,3 +50,8 @@
 .project img:hover{
     border: 5px solid rgb(143, 155, 168);
 }
+
+.footer{
+    margin-top: 45px;
+    top: auto;
+}
