@@ -111,3 +111,17 @@ p{
 .footer a{
     color: rgb(143, 155, 168);
 }
+
+@media only screen and (max-width: 1020px) {
+    .footer{
+        position: absolute;
+    
+        top: 97%;
+        left: 30%;
+    
+        transform: translate(-20%, -50%);
+    
+        text-align: center;
+        list-style: inside;
+    }
+}
