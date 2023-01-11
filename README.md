@@ -27,7 +27,7 @@
 			<pre>npm install ejs</pre>
 		</li>
 		<li>Start the server
-			<pre>npm start</pre>
+			<pre>node server.js</pre>
 		</li>
 		<li>Visit the website at http://localhost:3000</li>
 	</ol>
