@@ -19,7 +19,7 @@
 	</ul>
 	<h2>Getting Started</h2>
 	<ol>
-		<li>Clone the repository onto your local machine
+		<li>Clone the repository into your local machine
 			<pre>git clone https://github.com/AlexSteiner30/Portofolio.git</pre>
 		</li>
 		<li>Install dependencies
@@ -32,7 +32,7 @@
 		<li>Visit the website at http://localhost:3000</li>
 	</ol>
 	<h2>Contact</h2>
-	<p>If you have any questions or would like to work with me, please don't hesitate to contact me via the form on the Contact page or send me an email at [email address].</p>
+	<p>If you have any questions or would like to work with me, please don't hesitate to contact me via the form on the Contact page or send me an email at alex@alex.steiner.</p>
 	<p>Thank you for visiting my portfolio website!</p>
 </body>
 </html>
