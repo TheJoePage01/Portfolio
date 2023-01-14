@@ -3,8 +3,6 @@ const blog = require('./blog.js')
 const express = require('express');
 const app = express();
 
-const PORT = 3000;
-
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
@@ -24,6 +22,6 @@ app.get('/contact', function(req, res){
     res.render('contact');
 });
 
-app.listen(port=PORT, function(){
-    console.log('Server running on port ' + PORT);
+app.listen(port=process.env.PORT, function(){
+    console.log('Server running on port ' + process.env.PORT);
 });

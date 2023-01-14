@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
+require('dotenv').config();
+
 // Connection
 async function Connect() {
-  await mongoose.connect('mongodb+srv://Alex:<password>@blog.xdaaqwe.mongodb.net/?retryWrites=true&w=majority');
+    mongoose.set('strictQuery', true);
+    await mongoose.connect(process.env.MONGO_STRING);
 
+    console.log('Connected to database!');
 }
 
 // Schema
@@ -13,7 +17,7 @@ const postSchema = new mongoose.Schema({
     date : String, // need to change it to date format
     author : String, 
     text : String,
-    arguments : List<String>{}
+    arguments : String
 });
 
 // Functions
