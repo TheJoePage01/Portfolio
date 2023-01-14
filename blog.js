@@ -20,9 +20,11 @@ const postSchema = new mongoose.Schema({
     arguments : String
 });
 
+const Post = mongoose.model('post', postSchema);
+
 // Functions
 function UploadNewPost(title, subTitle, author, text, arguments){
-    const newPost = new blogSchema({
+    const newPost = new Post({
         title : title,
         subTitle : subTitle,
         date : "1/1/2023", // need to change it to a date
@@ -31,9 +33,11 @@ function UploadNewPost(title, subTitle, author, text, arguments){
         arguments : arguments
     });
 
-    console.log(`A new post has been added! Check it out! http://alexsteiner.dev/blog/${newPost._id}`);
+    newPost.save();
 
+    console.log(`A new post has been added! Check it out! http://alexsteiner.dev/blog/${newPost._id}`);
 }
 
 // Run
 Connect().catch(err => console.log(err));
+UploadNewPost('test', 'test', 'admin', 'hi', 'coding');
