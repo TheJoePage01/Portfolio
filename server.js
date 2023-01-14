@@ -1,3 +1,5 @@
+const blog = require('./blog.js')
+
 const express = require('express');
 const app = express();
 
