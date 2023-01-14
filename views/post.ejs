@@ -25,11 +25,11 @@
 
     <!-- Post -->
     <div class="post">
-        <h1 class="title"><%= post.title %></h1>
-        <h2 class="sub-title"><%= post.subTitle %></h2>
-        <p>
-            <%= post.text %>
-        </p>        
+        <h1 class="title"><%=post.title%></h1>
+        <h2 class="sub-title"><%=post.subTitle%></h2>
+        <p><%=post.author%> - <%=post.date%></p>
+
+        <%- post.text %>
     </div>
    
 

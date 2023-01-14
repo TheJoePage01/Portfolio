@@ -78,6 +78,8 @@ function UploadNewPost(title, subTitle, author, text, arguments){
     newPost.save();
 
     console.log(`A new post has been added! Check it out! http://alexsteiner.dev/blog/${newPost._id}`);
+
+    ReloadPosts();
 }
 
 
