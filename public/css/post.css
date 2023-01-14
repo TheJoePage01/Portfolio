@@ -1,0 +1,49 @@
+.post{
+    width: 57%;
+    margin: 0 auto;
+}
+
+.post .title{
+    color: #80ffe4;
+}
+
+.post .sub-title{
+    color: #ffca80;
+}
+
+.post h3{
+    color: white;
+    font-size: 25px;
+}
+
+.post p{
+    line-height: 30px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.post a{
+    color: #ffca80;
+    font-size: 15px;
+}
+
+.post img{
+    border-radius: 25px;
+    border: 5px solid rgb(33, 32, 36);    
+}
+
+.post img:hover{
+    border: 5px solid rgb(143, 155, 168);
+}
+
+.footer{
+    margin-top: 45px;
+    top: auto;
+}
+
+@media only screen and (max-width: 1020px) {
+    .post{
+        display: block;
+        text-align: left;
+    }
+}

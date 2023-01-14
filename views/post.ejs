@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/post.css" />
+    <title>Alex Steiner | Blog</title>
+</head>
+
+<body>
+
+    <!-- Nav bar-->
+    <nav class="nav-bar">
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Post -->
+    <div class="post">
+        <h1 class="title"><%= post.title %></h1>
+        <h2 class="sub-title"><%= post.subTitle %></h2>
+        <p>
+            <%= post.text %>
+        </p>        
+    </div>
+   
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <ul>
+                <li><a href="/">github</a></li>
+                <li><a href="/">discord</a></li>
+                <li><a href="/">email</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
