@@ -5,15 +5,16 @@ body{
 .post{
     width: 57%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .post .title{
-    color: #80ffe4;
+    color: #ffca80;
 }
 
 .post .sub-title{
-    margin-top: -30px;
-    color: #ffca80;
+    margin-top: -17px;
+    color: #80ffe4;
 }
 
 .post h3{
@@ -22,6 +23,7 @@ body{
 }
 
 .post p{
+    list-style: none;
     line-height: 30px;
     line-height: normal;
     letter-spacing: normal;
