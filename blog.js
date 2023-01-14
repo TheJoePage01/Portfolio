@@ -38,6 +38,10 @@ function UploadNewPost(title, subTitle, author, text, arguments){
     console.log(`A new post has been added! Check it out! http://alexsteiner.dev/blog/${newPost._id}`);
 }
 
+// Export
+module.exports = {
+    Post
+};
+
 // Run
 Connect().catch(err => console.log(err));
-UploadNewPost('test', 'test', 'admin', 'hi', 'coding');

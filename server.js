@@ -22,6 +22,16 @@ app.get('/contact', function(req, res){
     res.render('contact');
 });
 
+blog.Post.find({}, function(err, posts) {
+    if(!err){
+        posts.forEach(post => {
+            app.get(`/blog/${post._id}`, function(req, res){
+                res.send(post._id);
+            });
+        });
+    }
+});
+
 app.listen(port=process.env.PORT, function(){
     console.log('Server running on port ' + process.env.PORT);
 });
