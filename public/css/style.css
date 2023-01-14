@@ -58,13 +58,6 @@ p{
     text-transform: uppercase;
 }
 
-.nav-bar li:hover{
-    background-color: #282424;
-    
-    border: 13px solid #282424;
-    border-radius: 5px;
-}
-
 .nav-bar a{
     color: rgb(143, 155, 168);
 }

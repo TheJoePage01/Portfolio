@@ -25,12 +25,12 @@ li{
 
 .footer{
     margin-top: 45px;
-    top: auto;
+    top: 92%;
 }
 
 @media only screen and (max-width: 1020px) {
     .contact{
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
     }
 }

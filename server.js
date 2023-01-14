@@ -28,6 +28,12 @@ app.get('/contact', function(req, res){
     res.render('contact');
 });
 
+// Blog
+app.get('/blog', function(req, res){
+    res.render('blog');
+});
+
+
 // Mongoose Connection
 async function Connect() {
     mongoose.set('strictQuery', true);
