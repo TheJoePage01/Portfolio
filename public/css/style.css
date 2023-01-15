@@ -106,6 +106,9 @@ p{
 }
 
 @media only screen and (max-width: 1020px) {
+    nav{
+        width: auto;
+    }
     .footer{
         position: absolute;
     
