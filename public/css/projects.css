@@ -63,11 +63,11 @@
         text-align: left;
     }
 
-    .project .text{
+    .projects .text{
         float: left;
     }
 
-    .project img{
+    .projects img{
         float: none;
         height: auto; 
 

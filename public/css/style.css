@@ -106,7 +106,7 @@ p{
 }
 
 @media only screen and (max-width: 1020px) {
-    nav{
+    nav li ul a{
         width: 70%;
     }
     .footer{
