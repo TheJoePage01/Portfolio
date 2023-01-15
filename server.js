@@ -30,7 +30,10 @@ app.get('/contact', function(req, res){
 
 // Blog
 app.get('/blog', function(req, res){
-    res.render('blog');
+    var x = GetLatestPosts(5);
+    res.render('blog', { 
+        posts : x
+    });
 });
 
 
@@ -71,6 +74,15 @@ function ReloadPosts(){
     });
 }
 
+async function GetLatestPosts(amount){
+    var x = await Post.find().sort({ _id: -1 }).limit(amount);
+    var y = [];
+    await x.forEach(z =>{
+        y.push(z);
+    })
+    return x;
+}
+
 function UploadNewPost(title, subTitle, author, text, arguments){
     const newPost = new Post({
         title : title,
@@ -93,5 +105,6 @@ function UploadNewPost(title, subTitle, author, text, arguments){
 app.listen(port=process.env.PORT, async function(){
     console.log('Server running on port ' + process.env.PORT);
     Connect().catch(err => console.log(err));
+    
     ReloadPosts();
 });
