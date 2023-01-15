@@ -60,15 +60,18 @@
     .projects{
         width: 80%;
         display: block;
-        text-align: left;
     }
 
-    .projects .text{
+    .project{
+        display: inline;
+    }
+    
+    .project .text{
         float: left;
     }
 
-    .projects img{
-        float: none;
+    .project img{
+        float: left;
         height: auto; 
 
         width: 100%; 
