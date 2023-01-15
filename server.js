@@ -49,7 +49,7 @@ const postSchema = new mongoose.Schema({
     date : String, // need to change it to date format
     author : String, 
     text : String,
-    arguments : String
+    arguments : Array
 });
 
 const Post = mongoose.model('post', postSchema);

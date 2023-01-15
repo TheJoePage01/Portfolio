@@ -18,6 +18,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -27,22 +28,33 @@
     <div class="post">
         <h1 class="title"><%=post.title%></h1>
         <h2 class="sub-title"><%=post.subTitle%></h2>
-        <p><%=post.author%> - <%=post.date%></p>
+        <p class="top-p"><%=post.author%> - <%=post.date%></p>
+
+        <hr>
 
         <%- post.text %>
 
-        <br>
-        <br>
+        <hr>
+
+        <% post.arguments.forEach(arg => { %>
+            <p class="arg"><%= arg %></p>
+        <% }) %>
 
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Footer -->
     <div class="footer">
         <div>
             <ul>
-                <li><a href="/">github</a></li>
-                <li><a href="/">discord</a></li>
-                <li><a href="/">email</a></li>
+                <li><a href="https://github.com/AlexSteiner30">github</a></li>
+                <li><a href="#">discord</a></li>
+                <li><a href="mailto:alex@alexsteiner.com">email</a></li>
             </ul>
         </div>
     </div>
