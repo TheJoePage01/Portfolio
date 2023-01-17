@@ -37,7 +37,7 @@
                 <div class="text">
                     <h3><%= post.title%></h3>
                     <p><%=post.summary%></p>
-                    <a href="/">Visit website ➝</a>
+                    <a href=<%= `/blog/${post._id}` %>>Read Post ➝</a>
                 </div>
     
                 <a href="https://github.com/AlexSteiner30/Among-US-3DS-Edition" style="color: transparent;">
@@ -53,7 +53,7 @@
             <ul>
                 <li><a href="https://github.com/AlexSteiner30">github</a></li>
                 <li><a href="#">discord</a></li>
-                <li><a href="mailto:alex@alexsteiner.com">email</a></li>
+                <li><a href="mailto:alex@alexsteiner.dev">email</a></li>
             </ul>
         </div>
     </div>
