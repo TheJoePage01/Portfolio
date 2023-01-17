@@ -52,6 +52,8 @@ const postSchema = new mongoose.Schema({
     subTitle : String,
     date : String, // need to change it to date format
     author : String, 
+    summary : String,
+    logo : String,
     text : String,
     arguments : Array
 });
