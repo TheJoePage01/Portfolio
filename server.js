@@ -29,10 +29,11 @@ app.get('/contact', function(req, res){
 });
 
 // Blog
-app.get('/blog', function(req, res){
-    var x = GetLatestPosts(5);
+app.get('/blog', async function(req, res){
+    var posts = await GetLatestPosts(5);
+
     res.render('blog', { 
-        posts : x
+        posts : (await posts)
     });
 });
 
@@ -77,10 +78,13 @@ function ReloadPosts(){
 async function GetLatestPosts(amount){
     var x = await Post.find().sort({ _id: -1 }).limit(amount);
     var y = [];
+
     await x.forEach(z =>{
         y.push(z);
-    })
-    return x;
+    });
+
+    console.log("Latests posts where loaded!");
+    return y;
 }
 
 function UploadNewPost(title, subTitle, author, text, arguments){
