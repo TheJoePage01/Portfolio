@@ -8,47 +8,47 @@ body{
     text-align: left;
 }
 
-.post .top-p{
+.top-p{
     font-style: italic;
 }
-.post .title{
+.title{
     color: #ffca80;
 }
 
-.post .sub-title{
+.sub-title{
     margin-top: -17px;
     color: #80ffe4;
 }
 
-.post h3{
+h3{
     color: white;
     font-size: 25px;
 }
 
-.post p{
+p{
     list-style: none;
     line-height: 30px;
     letter-spacing: normal;
 }
 
-.post a{
+a{
     color: #ffca80;
     font-size: 15px;
 }
 
-.post .arg{
+.arg{
   color: white;
   float: left;
   margin-right: 20px;
 }
 
 
-.post img{
+img{
     border-radius: 25px;
     border: 5px solid rgb(33, 32, 36);    
 }
 
-.post img:hover{
+img:hover{
     border: 5px solid rgb(143, 155, 168);
 }
 

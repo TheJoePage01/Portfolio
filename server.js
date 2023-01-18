@@ -86,6 +86,7 @@ async function GetLatestPosts(amount){
     });
 
     console.log("Latests posts where loaded!");
+    
     return y;
 }
 
@@ -93,7 +94,7 @@ function UploadNewPost(title, subTitle, author, text, arguments){
     const newPost = new Post({
         title : title,
         subTitle : subTitle,
-        date : "1/1/2023", // need to change it to a date
+        date : new Date().toJSON().slice(0,10).replace(/-/g,'/'), 
         author : author, 
         text : text,
         arguments : arguments

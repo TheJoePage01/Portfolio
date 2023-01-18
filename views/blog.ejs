@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/projects.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" />
 
     <title>Alex Steiner | Projects</title>
 </head>
@@ -26,14 +26,17 @@
     </nav>
 
 
-    <!-- Projects -->
-    <div class="projects">
-        <h1 class="title">Alex Steiner's Projects</h1>
+    <!--Search Bar -->
+    <div class="search-bar"></div>
+
+    <!-- Blog -->
+    <div class="blogs">
+        <h1 class="title">Alex Steiner's Blog</h1>
 
         <p>Welcome to my <strong>blog</strong>! Here, I will be sharing <strong>daily</strong> updates on my <strong>project</strong> and providing <strong>explanations</strong> on how it <strong>works</strong>. Follow along as I document my <strong>progress</strong> and share my <strong>insights</strong>.</p>
 
         <% posts.forEach(post => { %>
-            <div class="project">
+            <div class="blog">
                 <div class="text">
                     <h3><%= post.title%></h3>
                     <p><%=post.summary%></p>
