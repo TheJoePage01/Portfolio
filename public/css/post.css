@@ -64,4 +64,13 @@ img:hover{
         display: block;
         text-align: left;
     }
+    
+    img{
+        float: left;
+        height: auto; 
+
+        width: 100%; 
+
+        margin-left: 0px;
+    }
 }
