@@ -90,19 +90,20 @@ async function GetLatestPosts(amount){
     return y;
 }
 
-function UploadNewPost(title, subTitle, author, text, arguments){
+function UploadNewPost(title, subTitle, author, text, arguments, logo){
     const newPost = new Post({
         title : title,
         subTitle : subTitle,
         date : new Date().toJSON().slice(0,10).replace(/-/g,'/'), 
         author : author, 
         text : text,
+        logo : logo,
         arguments : arguments
     });
 
     newPost.save();
 
-    console.log(`A new post has been added! Check it out! http://alexsteiner.dev/blog/${newPost._id}`);
+    console.log(`A new post has been added! Check it out! https://alexsteiner.dev/blog/${newPost._id}`);
 
     ReloadPosts();
 }
