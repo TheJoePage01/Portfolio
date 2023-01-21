@@ -11,6 +11,7 @@
     transform: translate(-50%, -50%);
 }
 
+
 .introduction img{
     float: left;
 
@@ -25,6 +26,7 @@
 .introduction h1{
     color: white;
 }
+
 
 @media only screen and (max-width: 1020px) {
     .introduction{
