@@ -51,10 +51,6 @@
     border: 5px solid rgb(143, 155, 168);
 }
 
-.footer{
-    margin-top: 45px;
-    top: auto;
-}
 
 @media only screen and (max-width: 1020px) {
     .blogs{
