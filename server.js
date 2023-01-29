@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const fs = require('fs');
 
 const express = require('express');
 const app = express();
@@ -35,6 +36,13 @@ app.get('/blog', async function(req, res){
     res.render('blog', { 
         posts : (await posts)
     });
+});
+
+// Resume
+app.get('/resume', function(req, res){
+    var data =fs.readFileSync('public/Resume-Alex-Steiner.pdf');
+    res.contentType("application/pdf");
+    res.send(data);
 });
 
 
