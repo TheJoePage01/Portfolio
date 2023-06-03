@@ -45,6 +45,10 @@ app.get('/resume', function(req, res){
     res.send(data);
 });
 
+// Nervision
+app.get('/nervision', function(req, res){
+    res.status(301).redirect("http://nervision.duckdns.org:4080/")
+});
 
 // Mongoose Connection
 async function Connect() {
