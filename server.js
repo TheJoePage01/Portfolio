@@ -38,18 +38,6 @@ app.get('/blog', async function(req, res){
     });
 });
 
-// Resume
-app.get('/resume', function(req, res){
-    var data =fs.readFileSync('public/Resume-Alex-Steiner.pdf');
-    res.contentType("application/pdf");
-    res.send(data);
-});
-
-// Nervision
-app.get('/nervision', function(req, res){
-    res.status(301).redirect("http://nervision.duckdns.org:4080/")
-});
-
 // Mongoose Connection
 async function Connect() {
     mongoose.set('strictQuery', true);
@@ -115,7 +103,7 @@ function UploadNewPost(title, subTitle, author, text, arguments, logo){
 
     newPost.save();
 
-    console.log(`A new post has been added! Check it out! https://alexsteiner.dev/blog/${newPost._id}`);
+    console.log(`A new post has been added! Check it out! /blog/${newPost._id}`);
 
     ReloadPosts();
 }
